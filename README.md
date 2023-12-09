@@ -1,27 +1,41 @@
-# Car-Price-Prediction
+# Car Price Prediction Microservice
 
-build a service that takes information about a car and return the predicted price for that car. 
+This project aims to build a microservice that predicts the price of a car based on input features.
 
+### Note : this is not the final version... The project still needs develop and review. 
 
+We can summarize what has been done on this repo so far in the next steps:
 
-- use the text files to extract the features and information needed to train a model
+##### STEP 1 < Data Preprocessing > includes : 
+1. Data Extraction:
+Utilize text files to extract the necessary information and features for training a predictive model.
+2. Data Cleaning and Transformation:
+- Perform data cleaning to handle missing values and outliers.
+- Transform the data as needed, ensuring it is in a suitable format for model training.
 
-- conduct an explorative data analysis for the data
+3. Feature Engineering:
+- Engineer new features or modify existing ones to enhance the model's predictive power.
+- Drop un needed features
 
-- conduct data cleaning and transformation if needed
+4. Exploratory Data Analysis (EDA):
+- Conduct an explorative data analysis to understand the characteristics of the dataset.
+- Explore the relationships between different features and the target variable (car price).
 
-- conduct feature engineering
+##### STEP 2 < Model > includes : 
 
-- select the best model for the problem between Polynomial Regression, kNN, and Decision Tree
+1. Model Selection:
+- Consider encoding categorical variables and scaling numerical features.
+- Split the dataset into training and testing sets for model evaluation.
+- Model Training:
+    Train the selected model on the training dataset.
+- Evaluate different regression models suitable for the problem.
+- Choose the best model among Polynomial Regression, kNN (k-Nearest Neighbors), and Decision Tree.
 
-- create a microservice that predicts the car price given certain input data
+2. Microservice Development:
+- Develop a Flask-based microservice that accepts input data about a car and returns the predicted price using the trained model
 
-- the code should be shared in a private GitHub repo
+3. Testing:
+- Test the microservice with sample input data to ensure correct functionality.
+- Include sample JSON requests for testing with Postman. 
 
-- the link of the repository should be submitted to moodle before the deadline
-
-
-
-The data is found here
-
-https://drive.google.com/file/d/15IfzIhVUgBQ4IWLEO0M4VY3KKweqjzEW/view?usp=sharing
+The test step did not work as expect so the microservice still under development.
